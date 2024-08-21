@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Guestbook</title>
+</head>
+<body>
+<h1>GuestBook</h1>
+<div>
+    {{.SignatureCount}} total signatures -
+    <a href="/guestbook/new">Add Your Signature</a>
+</div>
+
+<div>
+    {{range .Signatures}}
+    <p>{{.}}</p>
+    {{end}}
+</div>
+</body>
+</html>
